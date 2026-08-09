@@ -196,10 +196,7 @@ The complete workflow includes:
 - 🧬 Extracting position-averaged ProtT5 embeddings  
   (**Rostlab/prot_t5_xl_half_uniref50**)
 
-- 🌐 Constructing IID-based PPI graphs supporting:
-
-  - Connected proteins (**V_connected = 4,520**)
-  - Disconnected proteins (**V_total = 6,421**)
+- 🌐 Constructing IID-based PPI graphs
 
 - 📉 Performing Phase I feature representation benchmarking
 
