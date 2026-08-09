@@ -1,0 +1,36 @@
+UniProt,DrugBank,Exists in DSP,ND_Relevance of Drugs,Matched_Evidence
+Q16850,DB00196,FALSE,Indirect ND (Pathway),"mitochondria, axon"
+P05979,DB00328,FALSE,Direct ND,alzheimer
+P41144,DB00704,FALSE,Indirect ND (Pathway),axon
+Q9Y271,DB00471,TRUE,Indirect ND (Pathway),axon
+Q2NNR5,DB00471,FALSE,Indirect ND (Pathway),axon
+P16233,DB01083,TRUE,Indirect ND (Pathway),axon
+P31652,DB00715,FALSE,Direct ND,dopamin
+P35367,DB06691,TRUE,Indirect ND (Pathway),"synap, axon"
+Q12809,DB00637,TRUE,Indirect ND (Pathway),"neuroprotect, axon"
+Q2NNR5,DB00549,FALSE,Indirect ND (Pathway),axon
+P31652,DB06684,FALSE,Direct ND,dopamin
+P08173,DB00986,TRUE,Indirect ND (Pathway),"synap, axon"
+P08912,DB00986,TRUE,Indirect ND (Pathway),"synap, axon"
+P08912,DB08897,TRUE,Indirect ND (Pathway),"synap, axon"
+P08173,DB08897,TRUE,Indirect ND (Pathway),"synap, axon"
+Q12809,DB08903,FALSE,Indirect ND (Pathway),"neuroprotect, axon"
+P25101,DB08932,TRUE,Indirect ND (Pathway),"oxidative stress, axon"
+P33032,DB04931,FALSE,Indirect ND (Pathway),axon
+P08173,DB00411,TRUE,Indirect ND (Pathway),"synap, axon"
+Q05769,DB12354,FALSE,Direct ND,"dopamin, alzheimer, neuroinflammation"
+P19099,DB11837,TRUE,Indirect ND (Pathway),"mitochondria, axon"
+P30968,DB11853,TRUE,Indirect ND (Pathway),axon
+P30969,DB11853,FALSE,Indirect ND (Pathway),axon
+Q05769,DB00482,FALSE,Direct ND,"dopamin, alzheimer, neuroinflammation"
+P22437,DB00482,FALSE,Direct ND,alzheimer
+P35355,DB00482,FALSE,Direct ND,"dopamin, alzheimer, neuroinflammation"
+P30935,DB09099,FALSE,Indirect ND (Pathway),axon
+P30938,DB09099,FALSE,Indirect ND (Pathway),axon
+P30875,DB09099,FALSE,Indirect ND (Pathway),axon
+P06536,DB00588,FALSE,Indirect ND (Pathway),"oxidative stress, glutamat, synap, mitochondria, axon"
+P97266,DB00854,FALSE,Indirect ND (Pathway),"synap, axon"
+P97266,DB00704,FALSE,Indirect ND (Pathway),"synap, axon"
+P33535,DB00295,FALSE,Direct ND,dopamin
+P22909,DB04946,FALSE,Direct ND,dopamin
+P34976,DB09279,FALSE,Indirect ND (Pathway),axon
