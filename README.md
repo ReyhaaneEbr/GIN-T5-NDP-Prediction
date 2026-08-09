@@ -1,6 +1,6 @@
 # 🧠 NDP_Prediction
 
-## Integrating Protein Sequence Embeddings and PPI Networks for Neurodegenerative Disease Protein Discovery (GIN-T5)
+### Integrating Protein Sequence Embeddings and PPI Networks for Neurodegenerative Disease Protein Discovery (GIN-T5)
 
 ---
 
