@@ -77,9 +77,15 @@ The framework focuses on four major neurodegenerative diseases:
 
 Network statistics:
 
-- Connected nodes (**V_connected**): 4,925 proteins
-- Total nodes (**V_total**): 6,081 proteins  
-  - Includes isolated proteins without PPI interactions
+- Connected nodes (**V_connected**): **4,520 proteins**
+  - Includes:
+    - 3,020 NDP-associated proteins
+    - 710 non-NDP proteins
+    - 455 drug-target proteins
+    - 335 additional interacting proteins
+
+- Total nodes (**V_total**): **6,421 proteins**
+  - Includes connected proteins and isolated proteins without documented PPI interactions
 
 ---
 
@@ -122,9 +128,11 @@ Multiple feature representations were systematically evaluated using an MLP base
 ## Handling Connected and Isolated Proteins
 
 - Connected proteins:
+
   - Update representations by aggregating neighborhood information during message passing
 
 - Isolated proteins:
+
   - Retain native ProtT5 sequence embeddings
   - Preserve biological information without requiring network connections
 
@@ -189,17 +197,20 @@ The complete workflow includes:
   (**Rostlab/prot_t5_xl_half_uniref50**)
 
 - 🌐 Constructing IID-based PPI graphs supporting:
-  - Connected proteins (**V_connected**)
-  - Disconnected proteins (**V_total**)
+
+  - Connected proteins (**V_connected = 4,520**)
+  - Disconnected proteins (**V_total = 6,421**)
 
 - 📉 Performing Phase I feature representation benchmarking
 
 - 📈 Training GIN-T5:
+
   - Epochs: 50
   - Optimizer: Adam
   - Learning rate: 0.001
 
 - ⚖️ Applying Weighted Cross-Entropy Loss:
+
   - Negative class weight: 2.0
   - Positive class weight: 1.0
 
