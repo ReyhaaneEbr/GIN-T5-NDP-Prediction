@@ -1,7 +1,7 @@
 # 🧠 NDP_Prediction
 Integrating Protein Sequence Embeddings and PPI Networks for Neurodegenerative Disease Protein Discovery (GIN-T5)
 ---
-##📌 Overview
+## 📌 Overview
 GIN-T5 is a graph-based deep learning framework designed to identify Neurodegenerative Disease–associated Proteins (NDPs) by jointly integrating protein–protein interaction (PPI) network topology and protein sequence-derived embeddings.
 
 Neurodegenerative diseases (NDs) are characterized by progressive neuronal dysfunction and abnormal protein aggregation. While experimental identification of disease-associated proteins is costly and time-consuming, existing computational approaches largely rely on handcrafted descriptors or PPI network topology alone. To address these limitations, GIN-T5 combines Graph Isomorphism Networks (GIN) to model PPI structure and ProtT5 protein language model embeddings to capture sequence-level biological information, effectively supporting both connected and isolated protein nodes.
@@ -16,8 +16,8 @@ Huntington’s Disease (HD)
 
 Amyotrophic Lateral Sclerosis (ALS)
 
-##🧪 Data Collection & Labeling
-###🧬 Disease-Associated Proteins
+## 🧪 Data Collection & Labeling
+### 🧬 Disease-Associated Proteins
 
 Curated from UniProtKB for AD, PD, HD, and ALS
 
@@ -55,13 +55,13 @@ Drug Datasets: RepoDB (drug–disease links) and BindingDB (IC
   binding affinities)
 ---
 ## ▦ Feature Representation
-###🧫 Phase I Representation Selection
+### 🧫 Phase I Representation Selection
 
 Systematically benchmarked handcrafted sequence features (BLOSUM62, Dipeptide composition), network topological metrics (18 graph descriptors, Word2Vec, Node2Vec), and protein language models (ESM2, ProtBERT, ProtT5) using an MLP baseline.
 
 Identified ProtT5 (1024-dimensional) as the optimal sequence representation.
 
-###🧩 Graph Construction & Node Handling
+### 🧩 Graph Construction & Node Handling
 
 Nodes: Represent proteins, all initialized with 1024-dimensional ProtT5 embeddings.
 
@@ -82,7 +82,7 @@ Output layer: Linear classifier mapping 64 latent features →2 target classes
 
 Interpretability: Integrated GNNExplainer highlights disease-informative subgraphs and sequence attributes
 ---
-##⚙️ Training Pipeline
+## ⚙️ Training Pipeline
 🧬 Extract position-averaged 1024-d ProtT5 protein sequence embeddings (Rostlab/prot_t5_xl_half_uniref50)
 
 🌐 Construct the IID-based PPI graph supporting connected (V 
@@ -120,7 +120,7 @@ Model performance is evaluated across 5-fold cross-validation using:
 
 ---
 
-##💊 Drug Repurposing Analysis
+## 💊 Drug Repurposing Analysis
 Using the predicted ND-associated proteins:
 
 - Candidate proteins were mapped to known drugs in RepoDB and filtered by binding affinity (IC 
