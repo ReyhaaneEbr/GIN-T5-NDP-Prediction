@@ -44,29 +44,35 @@ The framework focuses on four major neurodegenerative diseases:
 
 ## 🧬 Disease-Associated Proteins
 
-- Curated from **UniProtKB** for:
-  - Alzheimer’s Disease (AD)
-  - Parkinson’s Disease (PD)
-  - Huntington’s Disease (HD)
-  - Amyotrophic Lateral Sclerosis (ALS)
+Disease-associated genes associated with major neurodegenerative disorders were collected from **DisGeNET**, including:
+
+- Alzheimer’s Disease (AD)
+- Parkinson’s Disease (PD)
+- Huntington’s Disease (HD)
+- Amyotrophic Lateral Sclerosis (ALS)
+
+The obtained disease-associated genes were mapped to their corresponding protein entries using **UniProtKB**, generating a curated protein-level dataset for neurodegeneration-associated proteins (NDPs).
 
 ### Positive Set
 
-- **3,081 confirmed NDPs**
+- **3,081 confirmed neurodegeneration-associated proteins (NDPs)**
+
+These proteins represent the UniProt-mapped counterparts of disease-associated genes and were used as positive samples for NDP prediction.
+
+---
 
 ## 🧫 Housekeeping Proteins
 
-- Selected from stable housekeeping genes as negative controls
+Housekeeping genes were selected as negative controls based on their stable and essential cellular expression patterns. These genes were subsequently mapped to their corresponding protein entries using **UniProtKB** to generate the non-NDP protein set.
 
 ### Negative Set
 
-- **1,738 non-NDPs**
+- **1,738 non-NDP proteins**
 
 ### Labels
 
-- `1` → Disease-associated protein (NDP)
-- `0` → Housekeeping protein (non-NDP)
-
+- `1` → Neurodegeneration-associated protein (NDP)
+- `0` → Non-NDP (housekeeping protein)
 ---
 
 # 🌐 PPI Network & Pharmacological Data
